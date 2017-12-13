@@ -128,9 +128,8 @@ def classifyPerson():
 # plt.show()
 
 
-# group, labels = createDataSet()
-
-# print classify([0, 0], autoNorm(group), labels, 3)
+group, labels = createDataSet()
+print classify([0, 0], group, labels, 3)
 
 
 # datingDataMat, datingLabels = file2matrix('data.txt', ',', 2)

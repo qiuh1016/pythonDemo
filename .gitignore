@@ -1,6 +1,7 @@
 .idea/
 
 02/digits/
+04/email/
 
 # Ignore Mac OS desktop services store
 .DS_Store

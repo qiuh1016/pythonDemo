@@ -52,8 +52,7 @@ def classify0(inX, dataSet, labels, k):  # inX为用于分类的输入向量，d
         voteIlabel = labels[sortedDistIndicies[i]]  # 前k个标签数据
         classCount[voteIlabel] = classCount.get(voteIlabel, 0) + 1  # 判断classCount中有没有对应的voteIlabel，
         # 如果有返回voteIlabel对应的值，如果没有则返回0，在最后加1。为了计算k个标签的类别数量
-    sortedClassCount = sorted(classCount.items(),
-                              key=operator.itemgetter(1), reverse=True)  # 生成classCount的迭代器，进行排序，
+    sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)  # 生成classCount的迭代器，进行排序，
     # operator.itemgetter(1)以标签的个数降序排序
     return sortedClassCount[0][0]  # 返回个数最多的标签
 
@@ -128,20 +127,9 @@ def classifyPerson():
 # plt.show()
 
 
-group, labels = createDataSet()
-print classify([0, 0], group, labels, 3)
+# group, labels = createDataSet()
+# print classify([0, 0], group, labels, 3)
 
 
 # datingDataMat, datingLabels = file2matrix('data.txt', ',', 2)
 # autoNorm(datingDataMat)
-
-
-'''
-    手写识别系统
-'''
-def img2vector(filename):
-    returnVect = zeros((1, 1024))
-    
-'''
-    手写识别系统 结束
-'''

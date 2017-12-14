@@ -1,5 +1,7 @@
 .idea/
 
+02/digits/
+
 # Ignore Mac OS desktop services store
 .DS_Store
 

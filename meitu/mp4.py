@@ -34,8 +34,8 @@ def get_urls():
     url_x = '.html'
     page_urls = []
     page_urls.append(url_pre + url_x)
-    # for cnt in range(2, 8):
-    #     page_urls.append(url_pre + '_{cnt}'.format(cnt=cnt) + url_x)
+    for cnt in range(2, 8):
+        page_urls.append(url_pre + '_{cnt}'.format(cnt=cnt) + url_x)
     print("Please wait for second ...")
 
     video_urls = []
